@@ -1,0 +1,7 @@
+[Unit]
+Description=Save synchronized system time to PT7C4337 RTC
+ConditionPathExists=/dev/rtc0
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /usr/local/sbin/rtc_clock_sync.py save

@@ -1,0 +1,17 @@
+[Unit]
+Description=CS500 CAN fault alerts to STM32 buzzer
+After=local-fs.target
+ConditionPathExists=/data/can_comm_candidate_20261018/board_service.py
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/data/can_comm_candidate_20261018
+ExecStartPre=/usr/bin/python3 -B /data/can_comm_candidate_20261018/board_service.py --check-only
+ExecStartPre=/bin/sh /data/can_comm_candidate_20261018/configure_can0.sh --route-confirmed
+ExecStart=/usr/bin/python3 -u -B /data/can_comm_candidate_20261018/board_service.py --interface can0
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,7 @@
+// RTC PL I2C1 candidate; known-good FSBL and U-Boot unchanged.
+the_ROM_image:
+{
+    [bootloader, destination_cpu = apu-0, destination_device = ps, checksum = sha2]D:/qian_ru_shi_competition/ethernet_fsbl_hp1_candidate_20261013/testing/build/testing_hp1.elf
+    [partition_owner = fsbl, destination_cpu = apu-0, destination_device = pl, load = 0x200000, checksum = sha2]D:/qian_ru_shi_competition/rtc_pt7c4337_candidate_20261018/reports_rtc_bit/motor_camera_rtc_4143.bit
+    [partition_owner = fsbl, destination_cpu = apu-0, destination_device = ps, checksum = sha2]D:/qian_ru_shi_competition/boot_smoke_candidate/uboot_sd.elf
+}

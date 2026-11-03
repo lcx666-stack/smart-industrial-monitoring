@@ -1,0 +1,38 @@
+# Opt-in 0x4143 candidate. J12-15/16 encoder pins are not part of this top.
+# Same board-tested ADC and motor output assignments as the 0x1B43 image.
+set_pin_assignment { adc_data[0]    } { LOCATION = Y12; IOSTANDARD = LVCMOS33; }
+set_pin_assignment { adc_data[1]    } { LOCATION = Y13; IOSTANDARD = LVCMOS33; }
+set_pin_assignment { adc_data[2]    } { LOCATION = T9;  IOSTANDARD = LVCMOS33; }
+set_pin_assignment { adc_data[3]    } { LOCATION = U10; IOSTANDARD = LVCMOS33; }
+set_pin_assignment { adc_data[4]    } { LOCATION = T5;  IOSTANDARD = LVCMOS33; }
+set_pin_assignment { adc_data[5]    } { LOCATION = U5;  IOSTANDARD = LVCMOS33; }
+set_pin_assignment { adc_data[6]    } { LOCATION = V6;  IOSTANDARD = LVCMOS33; }
+set_pin_assignment { adc_data[7]    } { LOCATION = W6;  IOSTANDARD = LVCMOS33; }
+set_pin_assignment { pwm            } { LOCATION = U7;  IOSTANDARD = LVCMOS33; }
+set_pin_assignment { AN1            } { LOCATION = V7;  IOSTANDARD = LVCMOS33; }
+set_pin_assignment { AN2            } { LOCATION = U9;  IOSTANDARD = LVCMOS33; }
+set_pin_assignment { STBY           } { LOCATION = U8;  IOSTANDARD = LVCMOS33; }
+set_pin_assignment { adc_busy       } { LOCATION = Y9;  IOSTANDARD = LVCMOS33; }
+set_pin_assignment { adc_first_data } { LOCATION = Y8;  IOSTANDARD = LVCMOS33; }
+set_pin_assignment { adc_reset      } { LOCATION = V8;  IOSTANDARD = LVCMOS33; }
+set_pin_assignment { adc_convst_a   } { LOCATION = W8;  IOSTANDARD = LVCMOS33; }
+set_pin_assignment { adc_convst_b   } { LOCATION = W10; IOSTANDARD = LVCMOS33; }
+set_pin_assignment { adc_cs_n       } { LOCATION = W9;  IOSTANDARD = LVCMOS33; }
+set_pin_assignment { adc_rd_n       } { LOCATION = W11; IOSTANDARD = LVCMOS33; }
+
+# CS500 camera on the Milianke VID005/FEP-48IO adapter. These pins are taken
+# from the vendor DR1 2-lane CS500 reference; none overlap the motor pins.
+set_pin_assignment { mipi_clk_hs_p     } { LOCATION = N18; IOSTANDARD = LVDS18; PULLTYPE = NONE; }
+set_pin_assignment { mipi_data_hs_p[0] } { LOCATION = N20; IOSTANDARD = LVDS18; PULLTYPE = NONE; INDEL = 30; }
+set_pin_assignment { mipi_data_hs_p[1] } { LOCATION = R16; IOSTANDARD = LVDS18; PULLTYPE = NONE; INDEL = 20; }
+set_pin_assignment { mipi_data_lp_p[0] } { LOCATION = Y18; IOSTANDARD = LVCMOS18; PULLTYPE = PULLUP; }
+set_pin_assignment { mipi_data_lp_n[0] } { LOCATION = Y19; IOSTANDARD = LVCMOS18; PULLTYPE = PULLUP; }
+set_pin_assignment { mipi_data_lp_p[1] } { LOCATION = V17; IOSTANDARD = LVCMOS18; PULLTYPE = PULLUP; }
+set_pin_assignment { mipi_data_lp_n[1] } { LOCATION = V18; IOSTANDARD = LVCMOS18; PULLTYPE = PULLUP; }
+set_pin_assignment { cam_rst           } { LOCATION = V20; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment { cam_scl           } { LOCATION = T20; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment { cam_sda           } { LOCATION = U20; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+# PT7C4337 RTC: PS I2C1 via PL; open-drain in top-level RTL.
+set_pin_assignment { rtc_scl } { LOCATION = L15; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment { rtc_sda } { LOCATION = L14; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment { cam_mclk          } { LOCATION = W20; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = NONE; }

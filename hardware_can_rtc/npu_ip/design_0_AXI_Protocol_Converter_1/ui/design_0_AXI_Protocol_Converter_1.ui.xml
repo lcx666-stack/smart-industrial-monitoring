@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipxact:position xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:anlogic="http" xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014 http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
+    <ipxact:instances/>
+    <ipxact:designPorts/>
+    <ipxact:nodes/>
+    <ipxact:scrollBar>
+        <ipxact:hValue>0</ipxact:hValue>
+        <ipxact:vValue>0</ipxact:vValue>
+    </ipxact:scrollBar>
+    <ipxact:scale>
+        <ipxact:xScale>1</ipxact:xScale>
+        <ipxact:yScale>1</ipxact:yScale>
+    </ipxact:scale>
+</ipxact:position>

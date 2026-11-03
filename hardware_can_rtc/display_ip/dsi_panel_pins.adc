@@ -1,0 +1,18 @@
+# FEP-VID005-MIPI DSI outputs copied from the vendor 7-inch display reference.
+# Offline candidate only: do not include in the active project until the
+# user's exact panel, cable orientation and power requirements are confirmed.
+set_pin_assignment { O_clk_hs_p } { LOCATION = U18; IOSTANDARD = LVDS18; PULLTYPE = NONE; PRE_EMP = ON; VOCM = L2; VOD = 300M; }
+set_pin_assignment { O_data_hs_p[0] } { LOCATION = P14; IOSTANDARD = LVDS18; PULLTYPE = NONE; PRE_EMP = ON; VOCM = L2; VOD = 300M; }
+set_pin_assignment { O_data_hs_p[1] } { LOCATION = U13; IOSTANDARD = LVDS18; PULLTYPE = NONE; PRE_EMP = ON; VOCM = L2; VOD = 300M; }
+set_pin_assignment { O_data_hs_p[2] } { LOCATION = T14; IOSTANDARD = LVDS18; PULLTYPE = NONE; PRE_EMP = ON; VOCM = L2; VOD = 300M; }
+set_pin_assignment { O_data_hs_p[3] } { LOCATION = P15; IOSTANDARD = LVDS18; PULLTYPE = NONE; PRE_EMP = ON; VOCM = L2; VOD = 300M; }
+set_pin_assignment { O_clk_lp_p } { LOCATION = T16; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = NONE; SLEWRATE = FAST; }
+set_pin_assignment { O_clk_lp_n } { LOCATION = U17; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = NONE; SLEWRATE = FAST; }
+set_pin_assignment { O_data_lp_p[0] } { LOCATION = W14; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; SLEWRATE = FAST; }
+set_pin_assignment { O_data_lp_n[0] } { LOCATION = Y14; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; SLEWRATE = FAST; }
+set_pin_assignment { O_data_lp_p[1] } { LOCATION = V15; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; SLEWRATE = FAST; }
+set_pin_assignment { O_data_lp_n[1] } { LOCATION = W15; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; SLEWRATE = FAST; }
+set_pin_assignment { O_data_lp_p[2] } { LOCATION = V16; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; SLEWRATE = FAST; }
+set_pin_assignment { O_data_lp_n[2] } { LOCATION = W16; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; SLEWRATE = FAST; }
+set_pin_assignment { O_data_lp_p[3] } { LOCATION = T12; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; SLEWRATE = FAST; }
+set_pin_assignment { O_data_lp_n[3] } { LOCATION = U12; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; SLEWRATE = FAST; }

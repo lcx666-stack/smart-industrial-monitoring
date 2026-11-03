@@ -1,0 +1,21 @@
+# SSH 密钥 —— 严禁上传
+.ssh/
+
+# Python
+__pycache__/
+*.pyc
+
+# 日志(含轮转文件 *.log.1 等)
+*.log
+*.logw
+*.log.*
+
+# 系统/编辑器
+Thumbs.db
+Desktop.ini
+.DS_Store
+.idea/
+.vscode/
+
+# 备份
+*.bak

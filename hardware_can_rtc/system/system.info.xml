@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipxact:root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:anlogic="http" xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014 http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
+    <ipxact:compositeFile compositeFileTopName="system">
+        <ipxact:fileCollection>
+            <ipxact:file name="ip/system_ARM_Processor_System_0/system_ARM_Processor_System_0.xml">
+                <ipxact:instanceName>ARM_Processor_System_0</ipxact:instanceName>
+                <ipxact:customTool>use_ps</ipxact:customTool>
+            </ipxact:file>
+            <ipxact:file name="ip/system_Processor_System_Reset_0/system_Processor_System_Reset_0.xml">
+                <ipxact:instanceName>Processor_System_Reset_0</ipxact:instanceName>
+            </ipxact:file>
+            <ipxact:file name="ip/system_Constant_0/system_Constant_0.xml">
+                <ipxact:instanceName>Constant_0</ipxact:instanceName>
+            </ipxact:file>
+            <ipxact:file name="ip/system_Constant_1/system_Constant_1.xml">
+                <ipxact:instanceName>Constant_1</ipxact:instanceName>
+            </ipxact:file>
+            <ipxact:file name="ip/system_AXI_ERAM_Controller_0/system_AXI_ERAM_Controller_0.xml">
+                <ipxact:instanceName>AXI_ERAM_Controller_0</ipxact:instanceName>
+            </ipxact:file>
+            <ipxact:file name="ip/system_AXI_GPIO_0/system_AXI_GPIO_0.xml">
+                <ipxact:instanceName>AXI_GPIO_0</ipxact:instanceName>
+            </ipxact:file>
+            <ipxact:file name="ip/system_AXI_Matrix_0/system_AXI_Matrix_0.xml">
+                <ipxact:instanceName>AXI_Matrix_0</ipxact:instanceName>
+            </ipxact:file>
+            <ipxact:file name="ip/system_AXI_Protocol_Converter_0/system_AXI_Protocol_Converter_0.xml">
+                <ipxact:instanceName>AXI_Protocol_Converter_0</ipxact:instanceName>
+            </ipxact:file>
+        </ipxact:fileCollection>
+    </ipxact:compositeFile>
+</ipxact:root>

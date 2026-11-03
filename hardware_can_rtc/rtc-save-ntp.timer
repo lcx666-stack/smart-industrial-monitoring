@@ -1,0 +1,10 @@
+[Unit]
+Description=Periodically save NTP time to PT7C4337 RTC
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=15min
+Unit=rtc-save-ntp.service
+
+[Install]
+WantedBy=timers.target

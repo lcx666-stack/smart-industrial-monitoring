@@ -1,0 +1,13 @@
+[Unit]
+Description=Restore system clock from PT7C4337 RTC
+After=systemd-udev-settle.service
+Wants=systemd-udev-settle.service
+Before=multi-user.target
+ConditionPathExists=/dev/rtc0
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /usr/local/sbin/rtc_clock_sync.py boot
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipxact:design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:anlogic="http" xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014 http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
+    <ipxact:vendor>anlogic.com</ipxact:vendor>
+    <ipxact:library>customized</ipxact:library>
+    <ipxact:name>design_system_AXI_GPIO_0</ipxact:name>
+    <ipxact:version>1.0</ipxact:version>
+    <ipxact:componentInstances>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>axi_gpio_top_system_AXI_GPIO_0_Inst</ipxact:instanceName>
+            <ipxact:componentRef vendor="anlogic.com" library="ip" name="AXI_GPIO" version="1.0"/>
+            <ipxact:configurableElementValues>
+                <ipxact:configurableElementValue referenceId="AL_DUAL_CHANNEL">1</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="AL_ALL_IN_PORTS">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="AL_ALL_OUT_PORTS">1</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="IN_OUT_USE">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="AL_ALL_IN_PORTS_2">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="AL_ALL_OUT_PORTS_2">1</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="IN_OUT_USE_2">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="AL_INTR_ENABLE">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="AL_GPIO_WD">32</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="DOUT_DEFAULT">'h00000000</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="GPIO2_WIDTH">2</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="DOUT_DEFAULT_2">'h00000000</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="AL_AXIS_ADDR_WD">9</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="AL_AXIS_DATA_WD">32</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="AL_RESET_TRI">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="AL_RESET_DOUT">32'h00000000</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="AL_GPIO2_WD">2</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="AL_RESET_TRI_2">0</ipxact:configurableElementValue>
+                <ipxact:configurableElementValue referenceId="AL_RESET_DOUT_2">2'h00000000</ipxact:configurableElementValue>
+            </ipxact:configurableElementValues>
+        </ipxact:componentInstance>
+    </ipxact:componentInstances>
+    <ipxact:adHocConnections>
+        <ipxact:adHocConnection>
+            <ipxact:name>s_axi_aclk</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="axi_gpio_top_system_AXI_GPIO_0_Inst" portRef="s_axi_aclk"/>
+                <ipxact:externalPortReference portRef="s_axi_aclk"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>s_axi_aresetn</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="axi_gpio_top_system_AXI_GPIO_0_Inst" portRef="s_axi_aresetn"/>
+                <ipxact:externalPortReference portRef="s_axi_aresetn"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>s_axi_awaddr</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="axi_gpio_top_system_AXI_GPIO_0_Inst" portRef="s_axi_awaddr"/>
+                <ipxact:externalPortReference portRef="s_axi_awaddr"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>s_axi_awvalid</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="axi_gpio_top_system_AXI_GPIO_0_Inst" portRef="s_axi_awvalid"/>
+                <ipxact:externalPortReference portRef="s_axi_awvalid"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>s_axi_awready</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="axi_gpio_top_system_AXI_GPIO_0_Inst" portRef="s_axi_awready"/>
+                <ipxact:externalPortReference portRef="s_axi_awready"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>s_axi_wdata</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="axi_gpio_top_system_AXI_GPIO_0_Inst" portRef="s_axi_wdata"/>
+                <ipxact:externalPortReference portRef="s_axi_wdata"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>s_axi_wstrb</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="axi_gpio_top_system_AXI_GPIO_0_Inst" portRef="s_axi_wstrb"/>
+                <ipxact:externalPortReference portRef="s_axi_wstrb"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>s_axi_wvalid</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="axi_gpio_top_system_AXI_GPIO_0_Inst" portRef="s_axi_wvalid"/>
+                <ipxact:externalPortReference portRef="s_axi_wvalid"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>s_axi_wready</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="axi_gpio_top_system_AXI_GPIO_0_Inst" portRef="s_axi_wready"/>
+                <ipxact:externalPortReference portRef="s_axi_wready"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>s_axi_bresp</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="axi_gpio_top_system_AXI_GPIO_0_Inst" portRef="s_axi_bresp"/>
+                <ipxact:externalPortReference portRef="s_axi_bresp"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>s_axi_bvalid</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="axi_gpio_top_system_AXI_GPIO_0_Inst" portRef="s_axi_bvalid"/>
+                <ipxact:externalPortReference portRef="s_axi_bvalid"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>s_axi_bready</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="axi_gpio_top_system_AXI_GPIO_0_Inst" portRef="s_axi_bready"/>
+                <ipxact:externalPortReference portRef="s_axi_bready"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>s_axi_araddr</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="axi_gpio_top_system_AXI_GPIO_0_Inst" portRef="s_axi_araddr"/>
+                <ipxact:externalPortReference portRef="s_axi_araddr"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>s_axi_arvalid</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="axi_gpio_top_system_AXI_GPIO_0_Inst" portRef="s_axi_arvalid"/>
+                <ipxact:externalPortReference portRef="s_axi_arvalid"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>s_axi_arready</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="axi_gpio_top_system_AXI_GPIO_0_Inst" portRef="s_axi_arready"/>
+                <ipxact:externalPortReference portRef="s_axi_arready"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>s_axi_rdata</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="axi_gpio_top_system_AXI_GPIO_0_Inst" portRef="s_axi_rdata"/>
+                <ipxact:externalPortReference portRef="s_axi_rdata"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>s_axi_rresp</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="axi_gpio_top_system_AXI_GPIO_0_Inst" portRef="s_axi_rresp"/>
+                <ipxact:externalPortReference portRef="s_axi_rresp"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>s_axi_rvalid</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="axi_gpio_top_system_AXI_GPIO_0_Inst" portRef="s_axi_rvalid"/>
+                <ipxact:externalPortReference portRef="s_axi_rvalid"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>s_axi_rready</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="axi_gpio_top_system_AXI_GPIO_0_Inst" portRef="s_axi_rready"/>
+                <ipxact:externalPortReference portRef="s_axi_rready"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>gpio_io_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="axi_gpio_top_system_AXI_GPIO_0_Inst" portRef="gpio_io_o"/>
+                <ipxact:externalPortReference portRef="gpio_io_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>gpio2_io_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="axi_gpio_top_system_AXI_GPIO_0_Inst" portRef="gpio2_io_o"/>
+                <ipxact:externalPortReference portRef="gpio2_io_o"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+    </ipxact:adHocConnections>
+    <ipxact:vendorExtensions>
+        <anlogic:device>DR1M90GEG400</anlogic:device>
+        <anlogic:coreRevision value="1"/>
+        <anlogic:displayname>AXI GPIO</anlogic:displayname>
+        <anlogic:ipGenVersion value="193873 2026/03/31">1.0</anlogic:ipGenVersion>
+    </ipxact:vendorExtensions>
+</ipxact:design>

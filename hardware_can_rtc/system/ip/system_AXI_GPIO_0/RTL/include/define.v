@@ -1,0 +1,3 @@
+`define AL_ALL_OUT_PORTS_system_AXI_GPIO_0
+`define AL_ALL_OUT_PORTS_2_system_AXI_GPIO_0
+`define AL_DUAL_CHANNEL_system_AXI_GPIO_0

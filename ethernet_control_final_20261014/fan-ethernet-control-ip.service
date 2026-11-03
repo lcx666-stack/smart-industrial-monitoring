@@ -1,0 +1,13 @@
+[Unit]
+Description=Secondary Ethernet address for CS500 desktop controller
+After=networking.service network-online.target rc-local.service
+Wants=networking.service network-online.target
+ConditionPathExists=/sys/class/net/eth0
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c '/sbin/ip link set eth0 up && (/sbin/ip -4 addr show dev eth0 | /bin/grep -q "192.168.0.50/24" || /sbin/ip addr add 192.168.0.50/24 dev eth0)'
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

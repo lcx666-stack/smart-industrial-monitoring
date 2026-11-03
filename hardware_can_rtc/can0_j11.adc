@@ -1,0 +1,4 @@
+# MLK-F3P-CZ02-DR1 J11 CAN0; copied from vendor 12.rtc board example.
+# Add only to an isolated fused-project candidate after PS CAN0 is PL IO.
+set_pin_assignment { can0_rx_in } { LOCATION = F19; IOSTANDARD = LVCMOS33; PULLTYPE = PULLUP; }
+set_pin_assignment { can0_tx_out } { LOCATION = F20; IOSTANDARD = LVCMOS33; DRIVESTRENGTH = 8; PULLTYPE = NONE; }

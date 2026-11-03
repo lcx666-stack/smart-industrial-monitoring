@@ -1,0 +1,10 @@
+// SPDX-License-Identifier: GPL-2.0-or-later
+// Candidate for the DR1M90 Linux board DTS. Include only after confirming
+// that &soc uses two address cells and two size cells on the running board.
+&soc {
+	motor_wave_dma: motor-wave-dma@80000000 {
+		compatible = "qrs,motor-wave-dma";
+		reg = <0x0 0x80000000 0x0 0x1000>;
+		status = "okay";
+	};
+};

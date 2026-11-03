@@ -1,0 +1,4 @@
+`define Master_AXI_GP0_Interface_system_ARM_Processor_System_0
+`define P2F_Reset0_Available_system_ARM_Processor_System_0
+`define SD0_cd_Dot_Enable_system_ARM_Processor_System_0
+`define Slave_AXI_HP0_Interface_system_ARM_Processor_System_0

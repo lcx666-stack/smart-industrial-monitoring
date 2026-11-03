@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ipxact:address xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:anlogic="http" xsi:schemaLocation="http://www.accellera.org/XMLSchema/IPXACT/1685-2014 http://www.accellera.org/XMLSchema/IPXACT/1685-2014/index.xsd">
+    <ipxact:addressSources>
+        <ipxact:addressSource type="inst">
+            <ipxact:name>ARM Processor System</ipxact:name>
+            <ipxact:displayName>ARM_Processor_System_0</ipxact:displayName>
+            <ipxact:interfaceName>M_AXI_GP0</ipxact:interfaceName>
+            <ipxact:baseAddress>0x80000000</ipxact:baseAddress>
+            <ipxact:addressDests>
+                <ipxact:addressDest type="inst">
+                    <ipxact:name>AXI ERAM Controller</ipxact:name>
+                    <ipxact:displayName>AXI_ERAM_Controller_0</ipxact:displayName>
+                    <ipxact:interfaceName>S_AXI</ipxact:interfaceName>
+                    <ipxact:slaveSegName>seg0</ipxact:slaveSegName>
+                    <ipxact:baseAddress>0x0000000080000000</ipxact:baseAddress>
+                    <ipxact:highAddress>0x0000000080000FFF</ipxact:highAddress>
+                </ipxact:addressDest>
+                <ipxact:addressDest type="inst">
+                    <ipxact:name>AXI GPIO</ipxact:name>
+                    <ipxact:displayName>AXI_GPIO_0</ipxact:displayName>
+                    <ipxact:interfaceName>S_AXI_Lite</ipxact:interfaceName>
+                    <ipxact:slaveSegName>seg0</ipxact:slaveSegName>
+                    <ipxact:baseAddress>0x0000000080001000</ipxact:baseAddress>
+                    <ipxact:highAddress>0x0000000080001FFF</ipxact:highAddress>
+                </ipxact:addressDest>
+            </ipxact:addressDests>
+        </ipxact:addressSource>
+    </ipxact:addressSources>
+</ipxact:address>
